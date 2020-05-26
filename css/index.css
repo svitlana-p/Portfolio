@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet');
+:root {
+font-family: 'Playfair', sans-serif;
+--main-color: #B41414;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+    font-family: 'Playfair', sans-serif;
+}
+.navbar span {
+    color: var(--main-color);
+}
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Playfair'
+}
+.navbar-nav {
+    font-size: 18px;
+    font-family: 'Playfair'
+}
+
+.cover {
+    background-image: url(../img/me1.jpg);    
+    background-position:  center;
+    background-size: cover;
+    min-height: 220px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    }
+.cover-title {
+    font-size: 38px;
+    font-family: 'Playfair';
+    margin-left: 30px;
+    margin-right: 200px;;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cover-subtitle {
+    font-size: 18px;
+    margin-left: 30px;
+    
+}
+@media (min-width: 500px) {
+    .cover-title {
+    font-size: 50px;
+    margin-left: 50px;
+    }
+    .cover-subtitle {
+    font-size: 24px;
+    margin-left: 50px;
+    color:grey
+    }
+    .cover {
+        min-height: 500px;
+        background-position: 65% 35%;
+    }
+    
+}
+
+@media (min-width: 660px) {
+    .cover-title {
+    font-size: 76px;
+    margin-left: 60px;
+    }
+    .cover-subtitle {    
+    margin-left: 60px;   
+    }
+}
+.about-me {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+} 
+.card {
+    padding: 30px;
+    padding-bottom: 0em;
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    
+}
+.card p{
+    color:grey;
+    }
+.icons {
+    display: flex;
+ }
+ a.nav-item.nav-link {
+     padding: 3px;
+ }
+ .placeholder {
+     min-height: 100px;
+ }
+  @media (min-width: 500px) {
+     .card {
+      width: 25rem;   
+     }
+ }
+ @media (min-width: 600px) {
+     .card {
+      width: 32rem;   
+     }
+ }
+ @media (min-width: 700px) {
+     .card {
+      width: 40rem;   
+     }
+ }
+ .portfolio h2 {
+     text-align: center;
+     font-size: 52px;
+     margin: 40px 0px 40px 0px;
+ }
