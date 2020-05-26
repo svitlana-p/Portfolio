@@ -58,7 +58,6 @@ body {
         min-height: 500px;
         background-position: 65% 35%;
     }
-    
 }
 
 @media (min-width: 660px) {
@@ -117,4 +116,21 @@ body {
      text-align: center;
      font-size: 52px;
      margin: 40px 0px 40px 0px;
+ }
+ #button-portfolio {
+    
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    
+ }
+  #button-portfolio a{
+    border: 1px solid #000000;
+    border-radius: 0.19em;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    background-color: rgb(243, 240, 236);
+    b    
  }
