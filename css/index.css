@@ -22,7 +22,7 @@ body {
 }
 
 .cover {
-    background-image: url(../img/me1.jpg);    
+    background-image: url(../img/me.jpg);    
     background-position:  center;
     background-size: cover;
     min-height: 220px;   
