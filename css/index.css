@@ -121,16 +121,87 @@ body {
     
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 100px 0px 100px 0px;
     
  }
   #button-portfolio a{
-    border: 1px solid #000000;
+    border: 1px solid #B41414;
     border-radius: 0.19em;
-    color: var(--main-color);
+    color: black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     padding: 10px;
     background-color: rgb(243, 240, 236);
-    b    
- }
+    
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a a b b b c"
+                         "a a b b b c"
+                         "d d e f f f"
+                         "d d e f f f";
+    grid-gap: 20px;
+}
+  .photo-grid img {
+    display: block;
+    width: 100%;
+    filter: drop-shadow(0px 0px 10px black);
+}
+#baby1 {
+    grid-area: a;
+}
+#baby2 {
+    grid-area: b;
+}
+#baby3 {
+    grid-area: c;
+}
+#baby4 {
+    grid-area: d;
+}
+#baby5 {
+    grid-area: e;
+}
+#baby6 {
+    grid-area: f;
+}
+#baby1:hover {
+    transform: scale(2);
+    z-index: 1;
+    filter: drop-shadow(10px 50px 50px);
+}
+#baby2:hover {
+    transform: scale(1.5);
+    z-index: 1;
+    filter: drop-shadow(5px 50px 50px);
+}
+#baby3:hover {
+    transform: scale(3);
+    z-index: 1;
+    filter: drop-shadow(5px 50px 50px);
+}
+#baby4:hover {
+    transform: scale(2);
+    z-index: 1;
+    filter: drop-shadow(5px 50px 50px);
+}
+#baby5:hover {
+    transform: scale(3);
+    z-index: 1;
+    filter: drop-shadow(5px 50px 50px);
+}
+#baby6:hover {
+    transform: scale(1.5);
+    z-index: 1;
+    filter: drop-shadow(5px 50px 50px);
+}
+footer {
+  background-color: var(--main-color);
+}
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+   }
