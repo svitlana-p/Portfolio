@@ -23,6 +23,12 @@ body {
 .nav-item {
     font-size: 20px;
 }
+#navPortfolio {
+    margin-left: 340px;
+}
+.nav-link {
+    margin-left: 20px;
+}
 .cover {
     background-image: url(../img/me.jpg);    
     background-position:  center;
@@ -114,6 +120,9 @@ body {
       width: 40rem;   
      }
  }
+ .portfolio {
+     margin: 0px 40px 0px 40px;
+ }
  .portfolio h2 {
      text-align: center;
      font-size: 52px;
@@ -127,15 +136,30 @@ body {
     
  }
   #button-portfolio a{
-    border: 1px solid #B41414;
+    border: 2px solid #B41414;
     border-radius: 0.19em;
     color: black;
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
-    background-color: rgb(243, 240, 236);
-    
+    background-color: rgb(243, 240, 236);    
   }
+  #button-portfolio a:hover {
+      background-color: var(--main-color);
+      color:white;
+  }
+  .photo-grid {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 40px 0px 40px;
+  }
+  .photo-grid img {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    filter: drop-shadow(0px 0px 10px black);
+}
+  @media (min-width: 500px){
   .photo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -147,10 +171,8 @@ body {
     grid-gap: 20px;
 }
   .photo-grid img {
-    display: block;
-    width: 100%;
-    filter: drop-shadow(0px 0px 10px black);
-}
+    margin: 0px;
+  }
 #baby1 {
     grid-area: a;
 }
@@ -199,27 +221,48 @@ body {
     z-index: 1;
     filter: drop-shadow(5px 50px 50px);
 }
+  }
 footer {
-  background-color: var(--main-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: var(--main-color);  
+  text-align: center;
+  color: white;
 }
-.footer-text {
-    color: white;
-   }
-   .footer-title {
-       font-size: 32px;
+
+.footer-title {
+       font-size: 30px;
+       font-weight: bold;
           }
-   .footer-title span {
+.footer-title span {
        font-size: 18px;
+       font-weight: normal;
    }
-   .createdBy {
-       color: white;
+.createdBy {
        font-size: 14px;
    }
-   .footer-text a{
+.footer-text a{
        text-decoration: none;
        color:white;
+       font-weight: bold;
    }
-  
+  @media (min-width: 660px) {
+      .footer-text {
+          display: flex;
+          justify-content: space-between;
+          margin: 0px 60px 0px 60px;
+         }
+       .createdBy {
+          display: flex;
+          justify-content: space-between;
+          margin: 0px 60px 0px 60px;
+         }
+         .footer-title {
+            text-align: start;
+            margin-top: 20px;
+         }      
+         .footer-link {
+            margin:40px 5px 0px 40px;
+         }
+         .footer-links {
+             display: flex;             
+         }
+  }
