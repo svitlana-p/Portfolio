@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet');
+:root {
+font-family: 'Playfair', sans-serif;
+--main-color: #B41414;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+    font-family: 'Playfair', sans-serif;
+}
+.navbar span {
+    color: var(--main-color);
+}
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Playfair';
+}
+.navbar-nav {
+    font-size: 18px;
+    font-family: 'Playfair';
+}
+.nav-item {
+    font-size: 20px;
+}
+#navPortfolio {
+    margin-left: 340px;
+}
+.nav-link {
+    margin-left: 20px;
+}
+footer {
+  background-color: var(--main-color);  
+  text-align: center;
+  color: white;
+}
+
+.footer-title {
+       font-size: 30px;
+       font-weight: bold;
+          }
+.footer-title span {
+       font-size: 18px;
+       font-weight: normal;
+   }
+.createdBy {
+       font-size: 14px;
+   }
+.footer-text a{
+       text-decoration: none;
+       color:white;
+       font-weight: bold;
+   }
+  @media (min-width: 660px) {
+      .footer-text {
+          display: flex;
+          justify-content: space-between;
+          margin: 0px 60px 0px 60px;
+         }
+       .createdBy {
+          display: flex;
+          justify-content: space-between;
+          margin: 0px 60px 0px 60px;
+         }
+         .footer-title {
+            text-align: start;
+            margin-top: 20px;
+         }      
+         .footer-link {
+            margin:40px 5px 0px 40px;
+         }
+         .footer-links {
+             display: flex;             
+         }
+  }
+  .offer {
+     border: 2px solid rgb(136, 136, 136);  
+     margin: 50px 200px 200px 200px;
+     font-family: 'Playfair'
+  }
+  .offer-form {
+      margin: 30px;
+      
+  }
+  .offer-title {
+      text-align: center;
+      margin: 30px;
+      
+  }
+  .offer-title h1 {
+      font-size: 52px;
+      font-weight: 900;
+  }
+  .offer-title p {
+      font-size: 18px;
+      color:grey;
+  }
+  .form-control {
+      background-color: rgb(243, 240, 236);  
+  }
+  #formControlTextarea { 
+    color: gray;
+}
+.btn {
+    border: 2px solid #B41414;
+    border-radius: 0.19em;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(243, 240, 236);    
+    padding: 10px 80px 10px 80px;
+  }
+  .btn:hover {
+      background-color: var(--main-color);
+      color:white;
+  }
+  .form-btn {
+      margin: 40px;      
+      display: flex;
+      justify-content: center;
+  }
