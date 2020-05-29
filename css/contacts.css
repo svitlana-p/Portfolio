@@ -75,7 +75,7 @@ footer {
   }
   .offer {
      border: 2px solid rgb(136, 136, 136);  
-     margin: 50px 200px 200px 200px;
+     margin: 10px 20px 20px 20px;
      font-family: 'Playfair'
   }
   .offer-form {
@@ -115,7 +115,23 @@ footer {
       color:white;
   }
   .form-btn {
-      margin: 40px;      
+      margin: 10px;      
       display: flex;
       justify-content: center;
+  }
+   @media (min-width: 500px) {
+      .offer {
+        margin: 30px 100px 100px 100px;
+      }
+      .form-btn {
+        margin: 25px;
+       }
+  }
+  @media (min-width: 720px) {
+      .offer {
+        margin: 40px 150px 150px 150px;
+      }
+      .form-btn {
+        margin: 30px;
+       }
   }
