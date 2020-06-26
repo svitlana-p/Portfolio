@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet');
 :root {
-font-family: 'Playfair', sans-serif;
+font-family: 'Dancing Script', sans-serif;
 --main-color: #B41414;
 }
 body {
     max-width: 980px;
     margin: auto;
-    font-family: 'Playfair', sans-serif;
+    font-family: 'Dancing Script', sans-serif;
 }
 .navbar span {
     color: var(--main-color);
@@ -14,11 +14,11 @@ body {
 .navbar-brand {
     font-size: 32px;
     font-weight: bold;
-    font-family: 'Playfair';
+    font-family: 'Dancing Script';
 }
 .navbar-nav {
     font-size: 18px;
-    font-family: 'Playfair';
+    font-family: 'Dancing Script';
 }
 .nav-item {
     font-size: 20px;
@@ -43,7 +43,7 @@ body {
     }
 .cover-title {
     font-size: 38px;
-    font-family: 'Playfair';
+    font-family: 'Dancing Script';
     margin-left: 30px;
     margin-right: 200px;;
     display: flex;
